@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        * {
+          font-family: consolas;
+          font-size: 25px;
+          overflow: hidden;
+        }
+
+        body {
+            background-image: url(img/helloworld.gif);
+            background-size: contain;
+            height: 100vh;
+            display: flex;
+            /* basically this aligns all items center vertically and horizontally and adds 15% more from the top */
+            justify-content: center;
+            align-items: center;
+            margin-top: 15%;
+        }
+
+        button {
+            position: relative;
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border: 2px solid orange;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;            
+        }
+
+        div {
+            background: orange;
+            height: 100%;
+            width: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            transition: 0.3s;
+        }
+
+        button:hover div {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="_numSystem.html"><button type="button"><div></div>[ENTER]</button></a>
+
+</body>
+</html>

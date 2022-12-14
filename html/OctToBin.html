@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Oct to Bin</title>
+</head>
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    <h1>How to Convert Octal to Binary</h1>
+
+    <h2>Step 1.</h2>
+    <img src="img/img_OctToBin/img1.JPG" alt="img1">
+    <p><strong>Write the given octal.</strong> Write the given octal and seperate each digit.</p>
+
+    <hr>
+    <h2>Step 2.</h2>
+    <img src="img/img_OctToBin/img2.JPG" alt="img2">
+    <p><strong>Write the binary bits for each digit.</strong> In the case above, 2 sets of 3 binary bits are needed to convert the octal. Thus two sets of 2<sup>2</sup>, 2<sup>1</sup>, 2<sup>0</sup> or just simply 4,2,1 are needed. In other cases:</p>
+    <ul>
+        <li>123<sub>8</sub>, three sets of 4,2,1 are needed.</li>
+        <li>77777<sub>8</sub>, five sets of 4,2,1 are needed.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 3.</h2>
+    <img src="img/img_OctToBin/img3.JPG" alt="img3">
+    <p><strong>Compute for the needed binary bits.</strong> Using the previous example, 25<sub>8</sub>:</p>
+    <ul>
+        <li>For the digit 2: a bit of 2 is needed.</li>
+        <li>For the digit 5: a bit of 4 and also a bit of 1 are needed to make up the digit 5.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 4.</h2>
+    <img src="img/img_OctToBin/img4.JPG" alt="img4">
+    <p><strong>Format the binary.</strong> Simply remove the space between the comuted binary digits and remove any unnecessary "0" from the left if there is any. In the example just join the 010 101 and remove the 0 from the left making 10101.</p>
+
+    <hr>
+    <h2>Step 5.</h2>
+    <img src="img/img_OctToBin/img5.JPG" alt="img5">
+    <p><strong>Write the answer along with its correct base subscript.</strong> Now, all you have to do to show that you are using a binary answer that must be operating in powers of 2, so write 10101 with base 2.</p>
+
+    <br>
+    <br>
+    <br>
+    <center><a href="#top">[to the top]</a></center>
+    <hr>
+
+</body>
+</html>

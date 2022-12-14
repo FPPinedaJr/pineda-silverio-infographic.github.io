@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Oct to Dec</title>
+</head>
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    <h1>How to Convert Octal to Decimal</h1>
+
+    <h2>Step 1.</h2>
+    <img src="img/img_OctToDec/img1.JPG" alt="img1">
+    <p><strong>Write down the octal number, then list the powers of 8 in order from right to left.</strong> Write the octal number first, next list the powers of 8 going from right to left. Start with 8<sup>0</sup> then keep increasing the power until it is the same number of digits as the octal numbers. In the example, there are 3 digits thus the list should have 64, 8, 1. </p>
+    
+    <hr>
+    <h2>Step 2.</h2>
+    <img src="img/img_OctToDec/img2.JPG" alt="img2">
+    <p><strong>Multiply the list number with it's corresponding octal digit.</strong> Each place value of the octal number should be multiplied by the matching power of eight to get the decimal equivalent. In this example:</p>
+    <ul>
+        <li>6 * 64 = 384</li>
+        <li>5 * 8 = 40</li>
+        <li>3 * 1 = 3</li>
+    </ul>
+
+    <hr>
+    <h2>Step 3.</h2>
+    <img src="img/img_OctToDec/img3.JPG" alt="img3">
+    <p><strong>Sum up the computed values.</strong> Add the numbvrs that are listed below the line. In this case add the 384 + 40 + 3 which will yield a sum of 427. This is the octal number 653's decimal conversion.</p>
+
+    <hr>
+    <h2>Step 4.</h2>
+    <img src="img/img_OctToDec/img4.JPG" alt="img4">
+    <p><strong>Write the answer along with its correct base subscript.</strong> Now, all you have to do to show that you are using a decimal answer that must be operating in powers of 10, so write 427 with base 10.</p>
+
+    <br>
+    <br>
+    <br>
+    <center><a href="#top">[to the top]</a></center>
+    <hr>
+</body>
+</html>

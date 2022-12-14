@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Bin to Hex</title>
+</head>
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    <h1>How to Convert from Binary to Hexadecimal</h1>
+
+    <h2>Step 1.</h2>
+    <img src="img/img_BinToHex/img1.jpg" alt="img1">
+    <p><strong>Starting from the right, divide your string of binary integers into groups of four.</strong> Four binary digits are converted into one hexadecimal unit. Therefore, you must first divide the binary number into groups of four, starting on the right, before you can convert it. For instance:</p>
+    <ul>
+        <li>Convert 1110001111011 into a hexadecimal number.</li>
+        <li>1110001111011 = (1)(1100)(0111)(1011)</li>
+    </ul>
+
+    <hr>
+    <h2>Step 2.</h2>
+    <img src="img/img_BinToHex/img2.jpg" alt="img2">
+    <p><strong>If the initial number is not four digits, add more zeros to the front.</strong>Although the zeros won't change the conversion, they will make it simpler to picture. Always keep in mind that you want all sets of 4-digit binary numbers.</p>
+    <ul>
+        <li>Convert 1110001111011 into a hexadecimal number.</li>
+        <li>1110001111011 = (1)(1100)(0111)(1011)</li>
+        <li>(1)(1100)(0111)(1011) = (0001)(1100)(0111)(1011)</li>
+    </ul>
+
+    <hr>
+    <h2>Step 3.</h2>
+    <img src="img/img_BinToHex/img3.jpg" alt="img3">
+    <p><strong>Convert one group of four digits at a time.</strong> Each binary set will need to be converted separately, so add them out on your paper to make things simplier. Work on converting each string of four digit binary to its corresponding numerical value. As an illustration:</p>
+    <ul>
+        <li>0001=0+0+0+1=1</li>
+        <li>1100=8+4+0+0=12</li>
+        <li>0111=0+4+2+1=7</li>
+        <li>1011=8+0+2+1=11</li>
+    </ul>
+
+    <hr>
+    <img src="img/img_BinToHex/img4.jpg" alt="img4">
+    <p><strong>Step 4. Create your hexadecimal number.</strong> After converting each of the 4-digit components, first convert the numbers that are 10 and above to letters as shown in the table below then just simply join them all up to get the hexadecimal number.</p>
+    <table border="3px" bgcolor="pink">
+        <tr>
+            <td><strong>Numerical Value</strong></td>
+            <td><strong>Hexadecimal Value</strong></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <p>Hence, using the example before:</p>
+    <ul>
+        <li>0001=1</li>
+        <li>1100=12=C</li>
+        <li>0111=7</li>
+        <li>1011=11=B</li>
+        <li>(0001)(1100)(0111)(1011)=1C7B</li>
+    </ul>
+
+    <hr>
+    <h2>Step 5.</h2>
+    <img src="img/img_BinToHex/img5.jpg" alt="img5">
+    <p><strong>Write the answer along with its correct base subscript.</strong> Now, all you have to do to show that you are using a hexadecimal answer that must be operating in powers of 16, so write 1C7B with base 16.</p>
+
+    <br>
+    <br>
+    <br>
+    <center><a href="#top">[to the top]</a></center>
+    <hr>
+</body>
+</html>

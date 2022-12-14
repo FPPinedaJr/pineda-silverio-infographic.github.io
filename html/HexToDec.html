@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Hex to Dec</title>
+</head>
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    <h1>How to Convert from Hexadecimal to Decimal</h1>
+    
+    <hr>
+    <h2>Step 1.</h2>
+    <img src="img/img_HexToDec/img1.jpg" alt="img1">
+    <p><strong>Write down the hexadecimal number, then list the powers of 16 in order from right to left.</strong> Write the hexadecimal number first, next list the powers of sixteen going from right to left. Start with 16<sup>0</sup> then keep increasing the power until it is the same number of digits as the hexadecimal numbers. In the example, there are 4 digits thus the list should have 4096, 256, 16, 1.</p>
+
+    <hr>
+    <h2>Step 2.</h2>
+    <img src="img/img_HexToDec/img2.jpg" alt="img2">
+    <p><strong>Multiply the list number with it's corresponding hexadecimal digit</strong> Each place value of the hexadecimal number should be multiplied by the matching power of sixteen to get the decimal equivalent. Write the powers of sixteen next to the hexadecimal digits to begin this operation. For example 2C9B<sub>16</sub>:</p>
+
+    <ul>
+        <li>2<sub>16</sub> = 2 x 16<sup>3</sup> = 2 x 4096 = 8192</li>
+        <li>C<sub>16</sub> = 12 x 16<sup>2</sup> = 12 x 256 = 3072</li>
+        <li>9<sub>16</sub> = 9 x 16<sup>1</sup> = 9 x 16 = 144</li>
+        <li>B<sub>16</sub> = 11 x 16<sup>0</sup> = 11 x 1 = 11</li>
+    </ul>
+    <p><em>Note: First, convert the hexadecimal digit with its decimal counterpart as shown in the table below:</em></p>
+    <table border="3px" bgcolor="pink">
+        <tr>
+            <td><strong>Decimal</strong></td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td><strong>Hexadecimal</strong></td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Step 3.</h2>
+    <img src="img/img_HexToDec/img3.jpg" alt="img3">
+    <p><strong>Sum up the computed values.</strong> Add the numbers that are listed below the line. Add 8192 + 3072 + 144 + 11 = 11419. This is the hexadecimal number 2C9B's decimal conversion.
+
+    <hr>
+    <h2>Step 4.</h2>
+    <img src="img/img_HexToDec/img4.jpg" alt="img4">
+    <p><strong>Write the answer along with its correct base subscript.</strong> Now, all you have to do to show that you are using a decimal answer that must be operating in powers of 10, so write 11419 with base 10.</p>
+
+    <br>
+    <br>
+    <br>
+    <center><a href="#top">[to the top]</a></center>
+    <hr>
+
+</body>
+</html>

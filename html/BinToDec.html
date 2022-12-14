@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Bin to Dec</title>
+</head>
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    
+    <h1>How to Convert from Binary to Decimal</h1>
+
+    <h2>Step 1.</h2>
+    <img src="img/img_BinToDec/img1.jpg" alt="img1">
+    <p><strong>Write down the binary number, then list the powers of 2 in order from right to left. </strong>To convert 11011011<sub>2</sub> from binary to decimal. Write it down first. Next, list the powers of two going from right to left. Start at 2<sup>0</sup> and give it a "1" evaluation. Exponents are increased by one for each power. Stop when the list's elements are the same number of digits as the binary number. Eight digits make up the sample number, 11011011, thus the list would have the following eight items: 128, 64, 32, 16, 8, 4, 2, 1.</p>
+
+    <hr>
+    <h2>Step 2.</h2>
+    <img src="img/img_BinToDec/img2.jpg" alt="img2">
+    <p><strong>On the top are the powers of two for each of the binary number's digits.</strong>To make each binary digit correspond to its power of two, just put 11011011 below the digits 128. 64. 32. 16. 8. 4. 2. and 1. The binary number and the stated powers of two should match up with the binary number. If you choose, you may also write the binary digits above the powers of two, what matters most is that they line up.</p>
+
+    
+    <hr>
+    <h2>Step 3.</h2>
+    <img src="img/img_BinToDec/img3.jpg" alt="img3">
+    <p><strong>Times each power of two to its corresponding binary digit.</strong> Go from one binary digit to the next. The power of two for the digit, if it is a 1, the value should be written below the line, underneath the digit. Write a 0 below the line, under the digit, if it is a 0.</p>
+    <ul>
+        <li>1 times 1 equals 1.</li>
+        <li>2 times 1 equals 2.</li>
+        <li>4 times 0 equals 0.</li>
+        <li>8 times 1 equals 8.</li>
+        <li>16 times 1 equals 16.</li>
+        <li>32 times 0 equals 0.</li>
+        <li>64 times 1 equals 64.</li>
+        <li>128 times 1 equals 128.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 4.</h2>
+    <img src="img/img_BinToDec/img4.jpg" alt="img4">
+    <p><strong>Sum up the computed values.</strong> Add the numbers that are listed below the line. Add 128 + 64 + 0 + 16 + 8 + 0 + 2 + 1 = 219. This is the binary number 11011011's decimal conversion.</p>
+
+    <hr>
+    <h2>Step 5.</h2>
+    <img src="img/img_BinToDec/img5.jpg" alt="img5">
+    <p><strong>Write the answer along with its correct base subscript. </strong>Now, all you have to do to demonstrate that you are using a decimal answer that must be operating in powers of 10, so write 219 with base 10.</p>
+
+    <br>
+    <br>
+    <br>
+    <center><a href="#top">[to the top]</a></center>
+    <hr>
+
+</body>
+</html>

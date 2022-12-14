@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Home</title>
+    <style>
+        body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-color: #1b1b32;
+        color: #f5f6f7;
+        font-family: Tahoma;
+        font-size: 16px;
+        }     
+
+        p, ul {
+            margin: 10px 30px;
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        .container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 0px;
+                padding: 0px;
+                justify-content: center;
+                height: 100%;
+                align-items: center;
+            }
+
+            .card {
+                display: block;
+                position: relative;
+                height: 480px;
+                margin: 50px;
+                box-shadow: 5px 5px 20px #00CCD3;
+                overflow: hidden;
+            }
+
+            .card-image {
+                height: 480px;
+                width: 720px;
+                border-radius: 3px;
+                border: transparent;
+            }
+
+            .intro {
+                height: 120px;
+                width: 720px;
+                padding: 7px;
+                box-sizing: border-box;
+                bottom: 0px;
+                position: absolute;
+                color: #f5f6f7;
+                transition: 0.5s;
+            }
+            .intro-h1 {
+                color: #00CCD3;
+                margin: 10px;
+                font-size: 75px;
+            }
+            .intro-p {
+                text-align: justify;
+                margin: 20px;
+                font-size: 30px;
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            .card:hover .intro {
+                height: 320px;
+                bottom: 0px;
+                background: rgba(0, 0, 0, 0.9);
+            }
+            .card:hover .intro-p {
+                opacity: 1;
+                visibility: visible;
+            }
+    </style>
+</head>
+<body>
+
+  <section class="header">
+      <ul>
+        <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+        <li><a href="zzzabout.html">About Us</a></li>
+        <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+          <div class="dropdown-content">
+              <a href="quiz1.html">Quiz 1</a>
+              <a href="quiz2.html">Quiz 2</a>
+              <a href="quiz3.html">Quiz 3</a>
+          </div>
+      </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Learn</a>
+            <div class="dropdown-content">
+                <a href="BinToDec.html">Binary to Decimal</a>
+                <a href="BinToHex.html">Binary to Hexadecimal</a>
+                <a href="BinToOct.html">Binary to Octal</a>
+                <a href="DecToBin.html">Decimal to Binary</a>
+                <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                <a href="DecToOct.html">Decimal to Octal</a>
+                <a href="HexToBin.html">Hexadecimal to Binary</a>
+                <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                <a href="HexToOct.html">Hexadecimal to Octal</a>
+                <a href="OctToBin.html">Octal to Binary</a>
+                <a href="OctToDec.html">Octal to Decimal</a>
+                <a href="OctToHex.html">Octal to Hexadecimal</a>
+              </div>
+        </li>
+
+        <li><a href="_numSystem.html"><b>Home</b></a></li>
+      </ul>
+  </section>
+
+    <div class="container">
+        <div class="card">
+            <img src="img/cards/decimal.gif" alt="decimal" class="card-image">
+            <div class="intro">
+                <h1 class="intro-h1">Decimal</h1>
+                <p class="intro-p">The <font color="orange">base-10</font> number system, arguably the most widely used number system, is referred to as decimal. The 10 single-digit digits of the decimal number system are 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="img/cards/binary.gif" alt="binary" class="card-image">
+            <div class="intro">
+                <h1 class="intro-h1">Binary</h1>
+                <p class="intro-p">All binary code used in computing systems is based on the <font color="orange">base-2</font> number system, which only allows for two possible values for each digit: 0 or 1.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="img/cards/octal.gif" alt="octal" class="card-image">
+            <div class="intro">
+                <h1 class="intro-h1">Octal</h1>
+                <p class="intro-p">An octal number system is one that has the <font color="orange">base-8</font> system as its fundamental unit. It use digits 0 through 7.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="img/cards/hexadecimal.gif" alt="hexadecimal" class="card-image">
+            <div class="intro">
+                <h1 class="intro-h1">Hexadecimal</h1>
+                <p class="intro-p">The <font color="orange">base-16</font> numbering system is known as hexadecimal. Consequently, this system uses the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, and 15. However, A, B, C, D, E, and F stand in for numbers 10-15.</p>
+            </div>
+        </div>
+    </div>
+      
+
+</body>
+</html>

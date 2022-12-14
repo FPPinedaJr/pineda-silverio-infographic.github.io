@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Dec to Oct</title>
+</head>
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    <h1>How to Convert from Decimal to Octal</h1>
+
+    <h2>Step 1.</h2>
+    <img src="img/img_DecToOct/img1.JPG" alt="img1">
+    <p><strong>Pick any decimal number to start with.</strong> For example, 670<sub>10</sub>.</p>
+
+    <hr>
+    <h2>Step 2.</h2>
+    <img src="img/img_DecToOct/img2.JPG" alt="img2">
+    <p><strong>Divide this amount by 8.</strong> For now disregard the remainder and divide the decimal number by 8 so that it can be converted to octal.</p>
+    <ul>
+        <li>In this case, 670 / 8 equals 83.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 3.</h2>
+    <img src="img/img_DecToOct/img3.JPG" alt="img3">
+    <p><strong>Find the remainder.</strong> The minimal number remaining after we've "counted by 8" as many times as we can is the remainder is the octal number's final digit, located in the ones location.</p>
+    <ul>
+        <li>In this case, 670 / 8 equals 83, leaving a remainder of 6.</li>
+        <li>So far, the octal number is 6.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 4.</h2>
+    <img src="img/img_DecToOct/img4.JPG" alt="img4">
+    <p><strong>Divide the result of your division by 8.</strong> Divide your result by 8 once more. Make a note of the result, then find the remainder.</p>
+    <ul>
+        <li>In our illustration: 83 was the solution to our last division.</li>
+        <li>83 / 8 equals 10 remainder 3</li>
+        <li>So far, our octal number is 36.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 5.</h2>
+    <img src="img/img_DecToOct/img5.JPG" alt="img5">
+    <p><strong> Once more divide by 8.</strong> Divide the solution to your previous division once more. Find the remaining amount by dividing it by 8 once more. </p>
+    <ul>
+        <li>For instance: The solution to our most recent division was 10.</li>
+        <li>10 / 8 = 1 remainder 2</li>
+        <li>So far, our octal number is 236.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 6.</h2>
+    <img src="img/img_DecToOct/img6.JPG" alt="img6">
+    <p>Step 6. <strong>Continue until you discover the last digit.</strong> Your final division calculation will yield a result of 0. The decimal number has now undergone a complete conversion.</p>
+    <ul>
+        <li>In our example: The answer to our last division was 1.</li>
+        <li>1 ÷ 8 = 0 remainder 1.</li>
+        <li>Our final answer is the octal number 1236. We can write this as 1236<sub>8</sub> to show that it is an octal number.
+        </li>
+    </ul>
+    <hr>
+    <img src="img/img_DecToOct/img7.JPG" alt="img7">
+    <p>Step 7. <strong>Recognize how this technique works.</strong> Here is an explanation if you're having problems comprehending this technique.</p>
+    <ul>
+        <li>Start with any decipal.</li>
+        <li>Divide the decimal with 8 to convert it to octal.</li>
+        <li>Take note of the remainder, that is a digit for the octal.</li>
+        <li>This continues until you discover the entire octal number.</li>
+    </ul>
+
+    <br>
+    <br>
+    <br>
+    <center><a href="#top">[to the top]</a></center>
+    <hr>
+</body>
+</html>

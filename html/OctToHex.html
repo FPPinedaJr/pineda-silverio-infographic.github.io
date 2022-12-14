@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Oct to Hex</title>
+</head>
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    <h1>How to Convert Octal to Hexadecimal</h1>
+
+    <h2>Step 1.</h2>
+    <img src="img/img_OctToHex/img1.JPG" alt="img1">
+    <p><strong>Understand how the conversion work. </strong> To convert from octal to hexadecimal, it is necessary to:</p>
+    <ol>
+        <li>convert the octal to binary;</li>
+        <li>convert the binary to hexadecimal.</li>
+    </ol>
+
+    <hr>
+    <h2>Step 2.</h2>
+    <img src="img/img_OctToHex/img2.JPG" alt="img2">
+    <p><strong>Convert it to binary. </strong> First find the binary equivalence of each octal digit and just simply reformat them. <em>for more details, <a href="OctToBin.html" target="_blank">click here</a></em></p>
+
+    <hr>
+    <h2>Step 3.</h2>
+    <img src="img/img_OctToHex/img3.JPG" alt="img3">
+    <p><strong>Group the binary into 4. </strong> After the binary is reformatted, you have to group the binary into 4 digits to be converted to hexadecimal. If the last group don't have 4 digits, you can add zeros on the left to make it easier for you. Using the example above: </p>
+    <ul>
+        <li>175<sub>8</sub> = 001111101 = 1111101<sub>2</sub></li>
+        <li>1111101<sub>2</sub> = (111)(1101) = (0111)(1101)</li>
+    </ul>
+
+    <hr>
+    <h2>Step 4.</h2>
+    <img src="img/img_OctToHex/img4.JPG" alt="img4">
+    <p><strong>Convert the binary to hexadecimal. </strong> You have to find the hexadecimal of each binary group. <em>for more details, <a href="BinToHex.html" target="_blank">click here</a></em></p>
+    <p>In the example above:</p>
+    <ul>
+        <li>0111=7</li>
+        <li>1101=13=D</li>
+    </ul>
+    <table border="3px" bgcolor="pink">
+        <tr>
+            <td><strong>Numerical Value</strong></td>
+            <td><strong>Hexadecimal Value</strong></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>F</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Step 5.</h2>
+    <img src="img/img_OctToHex/img5.JPG" alt="img5">
+    <p><strong>Write the answer along with its correct base subscript.</strong> Now, all you have to do to show that you are using a hexadecimal answer that must be operating in powers of 16, so write 7D with base 16.</p>
+
+    <br>
+    <br>
+    <br>
+    <center><a href="#top">[to the top]</a></center>
+    <hr>
+
+</body>
+</html>

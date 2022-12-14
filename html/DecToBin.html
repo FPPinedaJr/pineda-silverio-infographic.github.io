@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conversion.css">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Dec to Bin</title>
+</head>
+
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    <h1>How to Convert Decimal to Binary</h1>
+
+    <h2>Step 1.</h2>
+    <img src="img/img_DecToBin/img1.JPG" alt="img1">
+    <p><strong>Write the given.</strong> To convert the decimal number 156<sub>10</sub> to binary as an example, in a "long division" sign that is upside-down, write the dividend as the given decimal number. Outside the curve of the division sign, write the divisor as the base of the destination system, in this case, "2" for binary.</p>
+    <ul>
+        <li>This approach relies simply on division by two, making it considerably simpler for beginners to understand when depicted on paper.</li>
+        <li>Write the number of the base system that you are using as a subscript to each number to avoid confusion before and after conversion. The binary equivalent will have a subscript of 2, while the decimal number will have a subscript of 10.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 2.</h2>
+    <img src="img/img_DecToBin/img2.JPG" alt="img2">
+    <p><strong>Divide.</strong> Write the quotient below the division symbol and the remainder(0 or 1) to the right of the quotient.</p>
+    <ul>
+        <li>Since we are dividing by 2, the remainder will be either 0 or 1.</li>
+        <li>In this case, 156 / 2 is equal to 78 remainder 0.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 3.</h2>
+    <img src="img/img_DecToBin/img3.JPG" alt="img3">
+    <p><strong>Divide again till you get to 0.</strong> As you descend, divide each fresh quotient by 2 again, then write the results below the division symbol and the remainder to the right. When the quotient is 0, stop.</p>
+    
+    <hr>
+    <h2>Step 4.</h2>
+    <img src="img/img_DecToBin/img4.JPG" alt="img4">
+    <p><strong>The new binary number in writing.</strong> Read the series of remainders from the bottom up, starting with the lowest one. 10011100 for this example. This represents the decimal number 156 in binary. Alternately, write this way: 156<sub>10</sub> = 10011100<sub>2</sub>.</p>
+
+    <br>
+    <br>
+    <br>
+    <center><a href="#top">[to the top]</a></center>
+    <hr>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Dec to Hex</title>
+</head>
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    <h1>How to Convert from Decimal to Hexadecimal</h1>
+
+    <h2>Step 1.</h2>
+    <img src="img/img_DecToHex/img1.JPG" alt="img1">
+    <p><strong>Write down the decimal number.</strong> Write down any decimal  number. For example, 910<sub>10</sub>.</p>
+
+    <hr>
+    <h2>Step 2.</h2>
+    <img src="img/img_DecToHex/img2.JPG" alt="img2">
+    <p><strong>Divide the number by 16.</strong> Divide the decimal number by 16 so that it can be converted to hexadecimal.</p>
+    <ul>
+        <li>In the example, it will be 910 /16 equals 56 remainder 14.</li>
+    </ul>
+
+    <hr>
+    <h2>Step 3.</h2>
+    <img src="img/img_DecToHex/img3.JPG" alt="img3">
+    <p><strong>Continue until you meet zero.</strong> Continue repeating the division by 16 until your final division yields a result of 0.</p>
+    <ul>
+        <li>56 / 16 = 3 r.8</li>
+        <li>3 / 16 = 0 r.3</li>
+    </ul>
+
+    <hr>
+    <h2>Step 4.</h2>
+    <img src="img/img_DecToHex/img4.JPG" alt="img4">
+    <p><strong>Construct the hexadecimal number.</strong> Make the hexadecimal number by joining the computed remainders from bottom to top.</p>
+    <p><em>Note: First, convert the 10 and above decimal number to hexadecimal as shown in the table below:</em></p>
+    <table border="3px" bgcolor="pink">
+        <tr>
+            <td><strong>Decimal</strong></td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td><strong>Hexadecimal</strong></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <p>For the example, 14 needs to be converted to E first before joining the hexadecimal values making 38E.</p>
+
+    <hr>
+    <h2>Step 5.</h2>
+    <img src="img/img_DecToHex/img5.JPG" alt="img5">
+    <p><strong>Write the answer along with its correct base subscript.</strong> Now, all you have to do to show that you are using a hexadecimal answer that must be operating in powers of 16, so write 38E with base 16.</p>
+    
+    <br>
+    <br>
+    <br>
+    <center><a href="#top">[to the top]</a></center>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssConversion.css">
+    <link rel="stylesheet" href="cssHeader.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NumNota - Bin to Oct</title>
+</head>
+<body>
+
+    <section class="header">
+        <ul>
+          <a href="zzzhomepage.html"><img class="logo" src="img/logo.png" alt="title"/></a>
+          <li><a href="zzzabout.html">About Us</a></li>
+          <li><a href="https://drive.google.com/file/d/1r8O_3fK2opGf8Zg0EL_qxvmvKsYOrzIk/view?usp=sharing" target="_blank">Cheatsheet</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+            <div class="dropdown-content">
+                <a href="quiz1.html">Quiz 1</a>
+                <a href="quiz2.html">Quiz 2</a>
+                <a href="quiz3.html">Quiz 3</a>
+            </div>
+        </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn</a>
+              <div class="dropdown-content">
+                  <a href="BinToDec.html">Binary to Decimal</a>
+                  <a href="BinToHex.html">Binary to Hexadecimal</a>
+                  <a href="BinToOct.html">Binary to Octal</a>
+                  <a href="DecToBin.html">Decimal to Binary</a>
+                  <a href="DecToHex.html">Decimal to Hexadecimal</a>
+                  <a href="DecToOct.html">Decimal to Octal</a>
+                  <a href="HexToBin.html">Hexadecimal to Binary</a>
+                  <a href="HexToDec.html">Hexadecimal to Decimal</a>
+                  <a href="HexToOct.html">Hexadecimal to Octal</a>
+                  <a href="OctToBin.html">Octal to Binary</a>
+                  <a href="OctToDec.html">Octal to Decimal</a>
+                  <a href="OctToHex.html">Octal to Hexadecimal</a>
+                </div>
+          </li>
+  
+          <li><a href="_numSystem.html"><b>Home</b></a></li>
+        </ul>
+    </section>
+
+    <h1>How to Convert Binary to Octal Number</h1>
+
+    <h2>Step 1.</h2>
+    <img src="img/img_BinToOct/img1.JPG" alt="img1">
+    <p><strong> Recognize a binary number series.</strong> Simple strings of 1s and 0s make up binary integers, such as 101001, 001, or even just 1. This kind of string is typically binary if you see it. To avoid misunderstanding with the number "one thousand and one", some publications and professors additionally mark binary numerals with a subscript "2" such as 1001<sub>2</sub>.</p>
+<ul>
+    <li>This subscript denotes the "base" of the number. Binary is a base-two system, octal is base-eight.
+    </li>
+</ul>
+
+
+<hr>
+<h2>Step 2.</h2>
+<img src="img/img_BinToOct/img2.JPG" alt="img2">
+<p><strong>Starting from the far right,</strong> arrange all of the 1s and 0s in the binary number into sets of three. There are only eight octal numbers and two different binary numerals. Each octal number will require three binary numbers to represent it. To create your groups, start on the right. For instance, the binary value of 10011011 would be 10 011 011.</p>
+
+<hr>
+<h2>Step 3.</h2>
+<img src="img/img_BinToOct/img3.JPG" alt="img3">
+<p><strong>If you don't have enough digits to form a set of three,</strong> move zeros to the left of the last digit. Despite not being a multiple of three, the binary number 10011011 includes eight digits, which can be converted to octal. Simply increase your front group's zeros until it has three spots. For instance.</p>
+<ul>
+    <li>Original Binary: 10011011</li>
+    <li>Grouping: 10 011 011</li>
+    <li>Adding Zeros for Groups of Three: 010 011 011</li>
+</ul>
+
+<hr>
+<h2>Step 4.</h2>
+<img src="img/img_BinToOct/img4.JPG" alt="img4">
+<p>Step 4. <strong>Under each group of three digits, write a 4, a 2, and a 1 as placeholders.</strong> A place in the octal number system is represented by each of a set's three binary digits. A 4, a 2, and a 1 are indicated by the first number. Write these numbers beneath your sets of three binary numbers to keep things organized. For instance:</p>
+<ul>
+    <li>010 011 011 <br> 421 421 421</li><br>
+    <li>001 <br> 421</li><br>
+    <li>110 010 001 <br> 421 421 421</li>
+</ul>
+
+<hr>
+<h2>Step 5.</h2>
+<img src="img/img_BinToOct/img5.JPG" alt="img5">
+<p><strong>Write that number (4 or 2 or 1)</strong> to begin your octal numbers if there is a one above any of your placeholders. Your octal number has a 4 if there is a one above the "4". The octal number does not include a one if there is a 0 above the location where it should be, thus leave it as zero.</p>
+<ul>
+    <li>Problem: <ul> <li> Convert 010011011<sub>2</sub> to octal. </li></ul></li>
+    <li>Separate into threes: <ul><li>010 011 011</li></ul></li>
+    <li>Add placeholders: <ul><li>010 011 011 <br> 421 421 421</li></ul></li>
+    <li>Mark each places: <ul><li>010 011 011 <br> 421 421 421 <br> 020 021 021</li></ul></li>
+</ul>
+
+<hr>
+<h2>Step 6.</h2>
+<img src="img/img_BinToOct/img6.JPG" alt="img6">
+<p><strong>Each set of three new numbers should be added up.</strong> You can easily add up each group of three independently once you know how many spaces there are in the octal number. As a result, for 010, which becomes 0, 2, and 0, you get 2. Continuing the prior illustration.</p>
+<ul>
+    <li>Problem: <ul><li>Convert 101010011<Sub>2</Sub> to octal.</li> </ul></li>
+    <li>Separate, add placeholders, and mark each place: <ul><li>010 011 011 <br> 421 421 421 <br> 020 021 021</li></ul></li>
+    <li>Add up each set of three: <ul><li>(0+2+0)(0+2+1)(0+2+1)=2,3,3</li></ul></li>
+</ul>
+
+<hr>
+<h2>Step 7.</h2>
+<img src="img/img_BinToOct/img7.JPG" alt="img7">
+<p>Step 7. <strong>Place your newly converted answers together to form your final octal number.</strong> Splitting up the binary number was just to make solving easier -- the original number was one lone string. So, now that you've converted, put everything back together to get your final answer. That's all it takes.</p>
+<ul>
+    <li>Problem: <ul><li>Convert 010 011 011<sub>2</sub> to octal.</li></ul></li>
+    <li>Separate, add placeholders, mark places, and add totals: <ul><li>010 011 011 2 — 3 — 3</li></ul></li>
+    <li>Put converted numbers back together: <ul><li>233</li></ul></li>
+</ul>
+
+<hr>
+<h2>Step 8.</h2>
+<img src="img/img_BinToOct/img8.JPG" alt="img8">
+<p><strong>To complete the conversion, add a subscript 8.</strong> Technically, without correct notation, it is impossible to determine whether the number 523 is an octal number or a regular base-ten number. Put a subscript 8 on your response, referring to octal as a base-8 system, to let your teacher know you've been working hard.</p>
+    <ul>
+        <li>Problem:<ul><li>Convert 10011011<sub>2</sub> to octal</li></ul> </li>
+        <li>Conversion:<ul><li>233</li></ul> </li>
+        <li>Final Answer:<ul><li>233<sub>8</sub></li></ul> </li>
+    </ul>
+
+<br>
+<br>
+<br>
+<center><a href="#top">[to the top]</a></center>
+<hr>
+
+</body>
+</html>
